@@ -31,7 +31,7 @@ print(room)
 
 
 for email in emails:
-	# if it's an blank line don't add:
+	# if it's an blank line don't add: 
 	if email=="": continue
 	# Set the HTTP request payload (action)
 	membershipInfo = { "roomId": room["id"],
