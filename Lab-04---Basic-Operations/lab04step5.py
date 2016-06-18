@@ -9,7 +9,7 @@ myToken="Bearer "+myToken
 
 
 def post_message(mytoken,roomid,text):
-	# The header is send to authenticate
+	# The header is send to authenticate 
 	header = {'Authorization':mytoken, 'content-type':'application/json'}
 	# NEW: we have to include the room and message text
 	payload = {'roomId':roomid,'text':text }
