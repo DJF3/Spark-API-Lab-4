@@ -6,7 +6,7 @@ myToken="YOUR_PERSONAL_ACCESS_TOKEN_HERE"
 myToken="Bearer "+myToken
 
 def get_rooms(mytoken):
-	# The header is send to authenticate
+	# The header is send to authenticate 
 	header = {'Authorization':mytoken, 'content-type':'application/json'}
 	# Send GET request with above header, put result in 'result'
 	result=requests.get(url='https://api.ciscospark.com/v1/rooms',headers=header)
