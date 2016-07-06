@@ -7,7 +7,7 @@ myRoom="YOUR_ROOM_ID_HERE"
 myToken="Bearer "+myToken
 
 def get_memberships(mytoken,myroom):
-	# The header is send to authenticate
+	# The header is send to authenticate 
 	header = {'Authorization':mytoken, 'content-type':'application/json'}
 	# NEW: Besides the header for authentication we want to specify the
 	# room, that's what we send in the payload.
